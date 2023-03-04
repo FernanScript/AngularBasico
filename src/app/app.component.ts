@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 interface Tarjeta{
   titulo:string;
   sub:string;
+  image:string;
 }
 
 @Component({
@@ -17,9 +18,9 @@ export class AppComponent {
 
   ngOnInit():void{
     this.ArregloTarjeta = [
-      {titulo:'carta 1', sub:'Subtitulo carta 1'},
-      {titulo:'carta 2', sub:'Subtitulo carta 2'},
-      {titulo:'carta 3', sub:'Subtitulo carta 3'}
+      {titulo:'Angular básico', sub:'50 videos', image:"https://coditramuntana.com/system/image_projects/images/000/000/265/original/angular_coditramuntana.png?1553766572"},
+      {titulo:'Angular intermedio', sub:'100 videos', image:"https://wallpaperaccess.com/full/3910951.png"},
+      {titulo:'Angular experto', sub:'200 videos', image:"https://codewise.fr/assets/img/services/angular.png"}
     ]
   }
 }
